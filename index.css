@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+    max-height: max-content;
+}
+.background{
+    color: black;
+    width: 80vw;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+    border-radius: 36px;
+    height: 1px;
+}
+
+.tool {
+    display: flex;
+    justify-content: center;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+}
+
+.types button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px;
+    margin: 0 4px;
+}
+
+.img {
+    display: none;
+    justify-content: center;
+}
+
+.img button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.file {
+    display: none;
+    justify-content: center;
+}
+
+.file button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+}
+
+.print {
+    display: none;
+    justify-content: center;
+}
+
+.p2 {
+    display: none;
+    justify-content: center;
+}
+
+.p3 {
+    display: none;
+    justify-content: center;
+}
+
+.print button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.url {
+    display: none;
+    justify-content: center;
+}
+
+.url button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px;
+    margin: 0 12px;
+}
+
+.url input {
+    padding: 6px;
+    font-size: 16px;
+}
+
+#imgaePdf {
+    display: none;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.four {
+    width: 80vw;
+    max-height: max-content;
+    margin: auto;
+
+
+}
+
+.four iframe {
+    width: 100%;
+    height: 70vh;
+
+}
+
+#mainFirst {
+    background-image: url('1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    height: 40vh;
+}
+
+#inner {
+    display: none;
+}
+
+@media print {
+
+    .print {
+        display: none !important;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .tool h2 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 2px;
+    }
+}
+
+.op {
+    position: absolute;
+    left: 0;
+    top: -1%;
+    width: 100%;
+    height: 6%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.tool h2 {
+    color: white;
+}
+
+@media screen and (max-width: 760px) {
+    .tool h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .tool h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .tool h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .tool h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .tool h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .types button {
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 6px;
+        margin: 7px 0;
+    }
+
+    .types {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #mainFirst {
+        height: 52vh;
+    }
+}
+
+@media screen and (max-width: 296px) {
+    .tool h2 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.img label {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.img input {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: red;
+}
+
+.file label {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.file input {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: red;
+}
+
+.url label {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.url input {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: red;
+}
+
+@media screen and (max-width: 780px) {
+    .img {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img input {
+        margin-left: 46%;
+    }
+    .file {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .file input {
+        margin-left: 46%;
+    }
+    .url{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* .url input{
+        margin-left: 46%;
+    } */
+    
+    #mainFirst {
+        height: 52vh;
+    }
+}
